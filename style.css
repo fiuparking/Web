@@ -1,6 +1,56 @@
-h1, h2 {
-  font-family: Lato;
+
+div#app
+{
+	padding-left: 15px;
 }
+
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  overflow: hidden;
+  background-color: #fdc502;
+  font: bold 10px arial, sans-serif;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #081E3F;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  margin: 0;
+
+
+}
+
+li a:hover:not(.active) {
+  color: white;
+  background-color: #081E3F;
+}
+
+li a.active {
+  color: #081E3F;
+  background-color: #fdc502;
+}
+
+body {
+	background-color: #081E3F;
+	margin: 0;
+}
+
+h1, h2, h3, b {
+  font-family: arial;
+  color: white;
+}
+ img{
+ 	padding-top: 10px;
+ 	padding-left: 10px;
+ }
 
 #test
 {
@@ -9,6 +59,6 @@ h1, h2 {
 
 #app
 {
-  text-align: center;
-  font-family: Copperplate,Copperplate Gothic Light,fantasy;
+  text-align: left;
+  font: bold 20px arial, sans-serif;
 }

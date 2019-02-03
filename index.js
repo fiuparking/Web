@@ -32,40 +32,38 @@ fetch
         json[i].OtherSpaces = 0;
       }
       appDiv.innerHTML += "<br>";
-      
-      appDiv.innerHTML += '<h1><u>Garage : </u>'+json[i].GarageName+'<h1>';
+      appDiv.innerHTML += '<h1>Garage : '+json[i].GarageName+'<h1>'
       console.log("Garage : " + json[i].GarageName);
       appDiv.innerHTML += "<br>";
-      appDiv.innerHTML += '<b><u>Student Parking Spots Taken : </u>'+json[i].StudentSpaces+'<b>';
+      appDiv.innerHTML += '<b>Student Parking Spots Taken : '+json[i].StudentSpaces+'<b>';
       console.log("Student Parking Spots Taken : " + json[i].StudentSpaces);
       appDiv.innerHTML += "<br>";
-      appDiv.innerHTML += '<b><u>Total Student Parking Spots : </u>'+json[i].StudentMax+'<b>';
+      appDiv.innerHTML += '<b>Total Student Parking Spots : '+json[i].StudentMax+'<b>';
       console.log("Total Student Parking Spots : " + json[i].StudentMax);
       appDiv.innerHTML += "<br>";
-      appDiv.innerHTML += '<h3 style="color:red"><b><u>Student Parking Spots left: </u>'+(json[i].StudentMax - json[i].StudentSpaces)+'<b></h3>';
+      appDiv.innerHTML += '<h3 style="color:red"><b>Student Parking Spots left: '+(json[i].StudentMax - json[i].StudentSpaces)+'<b></h3>';
       console.log("Total Student Parking Spots : " + json[i].StudentMax);
       appDiv.innerHTML += "<br>";
-      appDiv.innerHTML += '<b><u>Employee Parking Spots Taken : </u>'+json[i].OtherSpaces+'<b>';
+      appDiv.innerHTML += '<b>Employee Parking Spots Taken : '+json[i].OtherSpaces+'<b>';
       console.log("Employee Parking Spots Taken : " + json[i].OtherSpaces);
       appDiv.innerHTML += "<br>";
-      appDiv.innerHTML += '<b><u>Total Employee Parking Spots : </u>'+json[i].OtherMax+'<b>';
+      appDiv.innerHTML += '<b>Total Employee Parking Spots : '+json[i].OtherMax+'<b>';
       console.log("Total Employee Parking Spots : " + json[i].OtherMax);
       appDiv.innerHTML += "<br>";
-      appDiv.innerHTML += '<h3 style="color:red"><b><u>Faculty Parking Spots left: </u>'+(json[i].OtherMax - json[i].OtherSpaces)+'<b></h3>';
+      appDiv.innerHTML += '<h3 style="color:red"><b>Faculty Parking Spots left: '+(json[i].OtherMax - json[i].OtherSpaces)+'<b></h3>';
       console.log("Total Student Parking Spots : " + json[i].StudentMax);
       appDiv.innerHTML += "<br>";
       //appDiv.innerHTML += '<b>'+json[i].asofstamp+'<b>';
       //appDiv.innerHTML += "<br>";
       console.log("Epoch timestamp not displayed: " + json[i].asofstamp);
-      appDiv.innerHTML += '<b><u>Checked on </u>'+json[i].asof+'<b>';
+      appDiv.innerHTML += '<b>Checked on '+json[i].asof+'<b>';
       console.log("Checked on :  " + json[i].asof);
       appDiv.innerHTML += "<br>";
-      appDiv.innerHTML += '<b><u>Student Parking : </u>'+json[i].StudentFull+'<u> Full</u><b>';
+      appDiv.innerHTML += '<b>Student Parking : '+json[i].StudentFull+' Full<b>';
       console.log("Student Parking % Full : " + json[i].StudentFull);
       appDiv.innerHTML += "<br>";
-      appDiv.innerHTML += '<b><u>Employee Parking : </u>'+json[i].OtherFull+'<u> Full</u><b>';
+      appDiv.innerHTML += '<b>Employee Parking : '+json[i].OtherFull+' Full<b>';
       console.log("Employee Parking % Full : " + json[i].OtherFull);
-      appDiv.innerHTML += "<br>";
       console.log("-----------------------------------------------------");
     }
   }
