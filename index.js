@@ -1,5 +1,5 @@
 // Import stylesheets
-import './style.css';
+// Re
 
 const url = "https://m.fiu.edu/feeds//transit/v1/json.php?section=parking";
 const url2 = "https://patcount.fiu.edu/garagecount.xml";
